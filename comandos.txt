@@ -1,0 +1,83 @@
+Comandos:
+
+1:
+
+git config --global user.name "Claitom"
+git config --global user.email "rodriguesclaitom0@gmail.com"
+
+2:
+
+mkdir AtividadeGit
+cd AtividadeGit
+touch comandos.txt
+
+3:
+
+git init
+
+4:
+
+touch introducao.txt desenvolvimento.txt conclusao.txt
+
+5:
+
+git add .
+git commit -m "Primeiro commit: criando os arquivos"
+
+6:
+
+git branch desenvolvimento
+git branch revisao
+
+7:
+
+git checkout desenvolvimento
+
+echo "introdução" >> introducao.txt
+echo "desenvolvimento" >> desenvolvimento.txt
+echo "conclusão" >> conclusao.txt
+
+8:
+
+git add .
+git commit -m "Adicionando textos na branch desenvolvimento"
+
+9:
+
+git checkout revisão
+
+echo "introdução 2.0" > introducao.txt
+echo "desenvolvimento 2.0" > desenvolvimento.txt
+
+10:
+
+git add .
+git commit -m "Alterações de revisão nos arquivos"
+
+11:
+
+git checkout desenvolvimento
+git merge revisao
+
+12:
+
+apaguei manualmente os caracteres: '>' e '="...
+
+13:
+
+git add .
+git commit -m "Resolução de conflitos"
+
+14:
+
+git checkout master
+git add gitL.png gitG.png
+git commit -m "Adicionando prints"
+
+
+15:
+
+git merge desenvolvimento
+git log --graph --oneline --all
+git add printFinal.png
+git commit -m "Adicionando print final"
